@@ -53,9 +53,9 @@ class Graph
                 colour[ans]="Black";
             }  
         }
-        void bfs()//WOULD PROVIDE EXTRA COVERAGE FOR DISJOINTED GRAPHS
+        void bfs(int source)//WOULD PROVIDE EXTRA COVERAGE FOR DISJOINTED GRAPHS
         {
-            for(int i=0;i<n;i++)
+            for(int i=source;i<n;i++)
             {
                 if(colour[i]=="White")
                 {
@@ -74,6 +74,6 @@ int main()
     g.add_edge(1,4);
     g.add_edge(2,5);
     g.add_edge(2,6);
-    g.bfs();
+    g.bfs(1);
 
 }
