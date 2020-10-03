@@ -46,7 +46,8 @@ class Graph
                     if(colour[*i]=="White")
                     {
                         colour[*i]="Green";
-                        distance[*i]=distance[*i]+1;
+                        distance[*i]=distance[ans]+1;
+                        parent[*i]=ans;
                         q.push(*i);
                     }
                 }
